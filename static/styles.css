@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* User Selection */
+.user-selection {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.user-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.user-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hidden Section */
+.hidden {
+    display: none;
+}
+
+/* Enterprise Section */
+#enterprise-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#enterprise-section p {
+    font-size: 1.1rem;
+}
+
+/* Individual Section */
+#individual-section {
+    margin: 20px;
+}
+
+#individual-section select {
+    padding: 8px;
+    margin: 10px;
+}
+
+#current-aqi {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#weather-table {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+#predict-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#predict-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Prediction Image */
+#prediction-img {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#prediction-img img {
+    width: 100%;
+    max-width: 400px;
+}
+
+#loadingIcon {
+    display: none; /* Initially hide the loading icon */
+}
