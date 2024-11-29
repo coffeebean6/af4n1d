@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQI Forecast WebUI</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>AQI Forecast for the Next 1 Day</h1>
+    </header>
+
+    <!-- User Type Selection -->
+    <section class="user-selection">
+        <button class="user-btn" id="enterprise-btn">Enterprise</button>
+        <button class="user-btn" id="individual-btn">Individual</button>
+    </section>
+
+    <!-- Enterprise Section -->
+    <section id="enterprise-section" class="hidden">
+        <h2>Welcome to Our Collaboration Portal</h2>
+        <p>Contact us for partnership opportunities: <a href="mailto:contact@aqiforecast.com">contact@aqiforecast.com</a></p>
+    </section>
+
+    <!-- Individual Section -->
+    <section id="individual-section" class="hidden">
+        <div>
+            <label for="city-select">Select a City:</label>
+            <select id="city-select">
+                <option value="new-york">New York</option>
+                <option value="london">London</option>
+                <option value="paris">Paris</option>
+                <!-- Add more cities here -->
+            </select>
+        </div>
+
+        <div id="current-aqi">
+            <h3>Current AQI for <span id="city-name"></span>:</h3>
+            <p id="aqi-value"></p>
+        </div>
+
+        <div id="weather-table">
+            <h3>Weather and Pollution Data (Last 3 Days)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>DEWP</th>
+                        <th>WDSP</th>
+                        <th>MAX</th>
+                        <th>MIN</th>
+                        <th>PRCP</th>
+                        <th>CO</th>
+                        <th>NO2</th>
+                        <th>O3</th>
+                        <th>PM10</th>
+                        <th>PM2.5</th>
+                        <th>SO2</th>
+                    </tr>
+                </thead>
+                <tbody id="weather-data">
+                    <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <button id="predict-btn">Predict Tomorrow's AQI</button>
+            <img id="loadingIcon" src="/static/loading.gif" width="30" alt="Loading..." />
+            <p id="prediction-result"></p>
+            <div id="prediction-img">
+                <!-- Image will appear here after prediction -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
